@@ -61,7 +61,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText">Pe</string>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica-Bold</string>
+									<string key="NSName">Georgia-Bold</string>
 									<double key="NSSize">33</double>
 									<int key="NSfFlags">16</int>
 								</object>
@@ -79,7 +79,7 @@
 							<object class="IBUILabel" id="298193911">
 								<reference key="NSNextResponder" ref="827736492"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{208, 12}, {83, 34}}</string>
+								<string key="NSFrame">{{208, 9}, {83, 37}}</string>
 								<reference key="NSSuperview" ref="827736492"/>
 								<reference key="NSWindow"/>
 								<bool key="IBUIOpaque">NO</bool>
@@ -89,7 +89,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText">23.12</string>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica</string>
+									<string key="NSName">Georgia</string>
 									<double key="NSSize">28</double>
 									<int key="NSfFlags">16</int>
 								</object>
@@ -102,7 +102,7 @@
 							<object class="IBUILabel" id="623471364">
 								<reference key="NSNextResponder" ref="827736492"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{76, 11}, {37, 18}}</string>
+								<string key="NSFrame">{{76, 9}, {37, 18}}</string>
 								<reference key="NSSuperview" ref="827736492"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="214872597"/>
@@ -112,8 +112,8 @@
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText">Label</string>
-								<object class="NSFont" key="IBUIFont" id="37097424">
-									<string key="NSName">Helvetica</string>
+								<object class="NSFont" key="IBUIFont" id="320317275">
+									<string key="NSName">Georgia</string>
 									<double key="NSSize">11</double>
 									<int key="NSfFlags">16</int>
 								</object>
@@ -135,7 +135,7 @@
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText">Label</string>
-								<reference key="IBUIFont" ref="37097424"/>
+								<reference key="IBUIFont" ref="320317275"/>
 								<reference key="IBUITextColor" ref="398129770"/>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">1</int>

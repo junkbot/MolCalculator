@@ -6,6 +6,19 @@
 @synthesize weight;
 @synthesize abbreviation;
 @synthesize number;
+@synthesize groupNumber;   
+@synthesize groupName;
+@synthesize period; 
+@synthesize roundedMass;          
+@synthesize meltingPoint; 
+@synthesize boilingPoint; 
+@synthesize density;
+@synthesize electroNegativity; 
+@synthesize firstIonisation;
+@synthesize electronAffinity;  
+@synthesize commonOxidation;
+@synthesize predictedConfiguration;
+@synthesize observedConfiguration;
 
 - (id) init
 {
@@ -46,11 +59,27 @@
                 commonOxidation:    (NSString*)commonOxidation 		    
          predictedConfiguration: (NSString*)predictedConfiguration
           observedConfiguration:  (NSString*)observedConfiguration{
+    
 	PElement *element = [[PElement alloc] init];
-	element.name = name;
+	
+    element.name = name;
 	element.weight = weight;
 	element.number = number;
 	element.abbreviation = abbreviation;
+    element.groupNumber = groupNumber;   
+    element.groupName = groupName;
+    element.period = period; 
+    element.roundedMass = roundedMass;          
+    element.meltingPoint = meltingPoint; 
+    element.boilingPoint = boilingPoint; 
+    element.density = density;
+    element.electroNegativity = electroNegativity; 
+    element.firstIonisation = firstIonisation;
+    element.electronAffinity = electronAffinity;  
+    element.commonOxidation = commonOxidation;
+    element.predictedConfiguration = predictedConfiguration;
+    element.observedConfiguration = observedConfiguration;
+    
     [element autorelease];
 	return element;
 }

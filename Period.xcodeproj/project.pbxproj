@@ -15,6 +15,11 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		AA0F3E3813A159B900EF96DC /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0F3E3713A159B900EF96DC /* GestureRecognizerViewController.m */; };
+		AA35EF96139181B200D213B4 /* NSString+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = AA35EF95139181B200D213B4 /* NSString+Subscript.m */; };
+		AA3FFAE2139FA63100550670 /* SingleElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3FFAE1139FA63100550670 /* SingleElementViewController.m */; };
+		AA4F91EC13913C0D00FA90A8 /* Periodic-Table kopi.csv in Resources */ = {isa = PBXBuildFile; fileRef = AA4F91EA13913C0D00FA90A8 /* Periodic-Table kopi.csv */; };
+		AA4F91ED13913C0D00FA90A8 /* periodicTable.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA4F91EB13913C0D00FA90A8 /* periodicTable.txt */; };
 		AA70DF0812E1CCE1006739AD /* NSArray+Indexing.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70DF0712E1CCE1006739AD /* NSArray+Indexing.m */; };
 		AA87425512E3949F006F774B /* ElementTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA87425412E3949F006F774B /* ElementTableCell.xib */; };
 		AA98842912DF5A0500C39602 /* PElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AA98842812DF5A0500C39602 /* PElement.m */; };
@@ -44,6 +49,14 @@
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Period-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Period-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AA0F3E3613A159B900EF96DC /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
+		AA0F3E3713A159B900EF96DC /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
+		AA35EF94139181B200D213B4 /* NSString+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Subscript.h"; sourceTree = "<group>"; };
+		AA35EF95139181B200D213B4 /* NSString+Subscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Subscript.m"; sourceTree = "<group>"; };
+		AA3FFAE0139FA63100550670 /* SingleElementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleElementViewController.h; sourceTree = "<group>"; };
+		AA3FFAE1139FA63100550670 /* SingleElementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleElementViewController.m; sourceTree = "<group>"; };
+		AA4F91EA13913C0D00FA90A8 /* Periodic-Table kopi.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Periodic-Table kopi.csv"; sourceTree = "<group>"; };
+		AA4F91EB13913C0D00FA90A8 /* periodicTable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = periodicTable.txt; sourceTree = "<group>"; };
 		AA70DF0612E1CCE1006739AD /* NSArray+Indexing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Indexing.h"; sourceTree = "<group>"; };
 		AA70DF0712E1CCE1006739AD /* NSArray+Indexing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Indexing.m"; sourceTree = "<group>"; };
 		AA87425412E3949F006F774B /* ElementTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementTableCell.xib; sourceTree = "<group>"; };
@@ -126,6 +139,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA4F91EA13913C0D00FA90A8 /* Periodic-Table kopi.csv */,
+				AA4F91EB13913C0D00FA90A8 /* periodicTable.txt */,
 				AA9B59B812EC76D300FE1B29 /* icon.png */,
 				AAF1900712E30DEE00BDD795 /* Default.png */,
 				8D1107310486CEB800E47090 /* Period-Info.plist */,
@@ -162,6 +177,8 @@
 		AA9B598F12EC760400FE1B29 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AA0F3E3613A159B900EF96DC /* GestureRecognizerViewController.h */,
+				AA0F3E3713A159B900EF96DC /* GestureRecognizerViewController.m */,
 				AA9B59C112EC77BF00FE1B29 /* CalculationViewController.h */,
 				AA9B59C212EC77BF00FE1B29 /* CalculationViewController.m */,
 				AAD3BA8412E4BD4700CF4141 /* ElementCell.h */,
@@ -170,6 +187,8 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				AAF8EF9C13313D860067C705 /* PElementSearch.h */,
 				AAF8EF9D13313D860067C705 /* PElementSearch.m */,
+				AA3FFAE0139FA63100550670 /* SingleElementViewController.h */,
+				AA3FFAE1139FA63100550670 /* SingleElementViewController.m */,
 			);
 			name = Controllers;
 			path = Classes;
@@ -180,6 +199,8 @@
 			children = (
 				AA70DF0612E1CCE1006739AD /* NSArray+Indexing.h */,
 				AA70DF0712E1CCE1006739AD /* NSArray+Indexing.m */,
+				AA35EF94139181B200D213B4 /* NSString+Subscript.h */,
+				AA35EF95139181B200D213B4 /* NSString+Subscript.m */,
 			);
 			name = Helpers;
 			path = Classes;
@@ -254,6 +275,8 @@
 				AA9B59B912EC76D300FE1B29 /* icon.png in Resources */,
 				AA9B59C512EC77BF00FE1B29 /* CalculationViewController.xib in Resources */,
 				AAE7B28413904D000088A334 /* SingleElementView.xib in Resources */,
+				AA4F91EC13913C0D00FA90A8 /* Periodic-Table kopi.csv in Resources */,
+				AA4F91ED13913C0D00FA90A8 /* periodicTable.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +298,9 @@
 				AA9B59D012EC784000FE1B29 /* PEquation.m in Sources */,
 				AAD38B3C132EC5120010E113 /* PEquationElement.m in Sources */,
 				AAF8EF9E13313D860067C705 /* PElementSearch.m in Sources */,
+				AA35EF96139181B200D213B4 /* NSString+Subscript.m in Sources */,
+				AA3FFAE2139FA63100550670 /* SingleElementViewController.m in Sources */,
+				AA0F3E3813A159B900EF96DC /* GestureRecognizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

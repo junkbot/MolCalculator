@@ -21,9 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[[self weight] setText: [NSString stringWithFormat:@"%1.2f", [[self calculatedResults] weight]]];
-    NSString* equationString = [[NSString alloc] initWithFormat: @"<html><body style='background-color: transparent;color:black;font-size:4em;font-family:helvetica;text-align:center;'>%@</body></html>", [calculatedResults equation]];
-    [[self equation] loadHTMLString: equationString baseURL:nil];    
-    [equationString release];
+    [[self equation] setText: [calculatedResults equation]];    
 }
 
 

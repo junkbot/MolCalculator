@@ -14,11 +14,11 @@
     UILabel *equationLabel;
     UIToolbar *toolbar;
     PEquation *myEquation;
-    UIWebView *webView;
+    UIBarButtonItem *webView;
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
-@property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *webView;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UILabel *equationLabel;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *cancelButton;

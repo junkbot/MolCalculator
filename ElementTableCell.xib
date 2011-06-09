@@ -111,7 +111,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">Label</string>
+								<string key="IBUIText">26</string>
 								<object class="NSFont" key="IBUIFont" id="320317275">
 									<string key="NSName">Georgia</string>
 									<double key="NSSize">11</double>
@@ -134,7 +134,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">Label</string>
+								<string key="IBUIText">209.12</string>
 								<reference key="IBUIFont" ref="320317275"/>
 								<reference key="IBUITextColor" ref="398129770"/>
 								<nil key="IBUIHighlightedColor"/>

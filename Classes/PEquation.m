@@ -1,5 +1,5 @@
 #import "PEquation.h"
-
+#import "NSString+Subscript.h"
 
 @implementation PEquation
 
@@ -39,9 +39,8 @@
            [theEquation appendString: [[element element] abbreviation]]; 
         } else {
             [theEquation appendString: [[element element] abbreviation]];
-            NSString* countString = [[NSString alloc] initWithFormat:@"<sub>%i</sub>", [element count]];
+            NSString* countString = [NSString stringWithSubscriptNumber:[element count]];
             [theEquation appendString: countString];
-            [countString release];
         }
 	}
     

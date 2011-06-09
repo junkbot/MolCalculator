@@ -23,9 +23,7 @@
 
 -(void)updateMoleculeLabel
 {
-    NSString* equationString = [[NSString alloc] initWithFormat: @"<html><body style='background-color: transparent;color:white;font-weight:bold;font-family:helvetica;text-align:center;text-shadow: 0px -1px 1px rgba(0,0,0,0.7);'>%@</body></html>", [myEquation equation]];
-    [[self webView] loadHTMLString: equationString baseURL:nil];    
-    [equationString release];
+    [[self webView] setTitle: [myEquation equation]];    
     [[self cancelButton] setEnabled:YES];
     [[[[[[self navigationController] viewControllers] objectAtIndex:0] navigationItem] rightBarButtonItem] setEnabled:YES];
 }
@@ -44,7 +42,7 @@
 {
     [self setMyEquation: nil];
     [self setMyEquation:[[PEquation alloc] init]];
-    [[self webView] loadHTMLString: @"<html><body style='background-color: transparent;color:white;font-weight:bold;font-family:helvetica;text-align:center;text-shadow: 0px -1px 1px rgba(0,0,0,0.7);'>Choose your elements</body></html>" baseURL:nil];    
+    [[self webView] setTitle: @"Choose your elements"];    
 
     [[self cancelButton] setEnabled:NO];
     [[[[[[self navigationController] viewControllers] objectAtIndex:0] navigationItem] rightBarButtonItem] setEnabled:NO];
@@ -59,14 +57,7 @@
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window addSubview:toolbar];
-    
-    for (id subview in webView.subviews)
-        if ([[subview class] isSubclassOfClass: [UIScrollView class]])
-            ((UIScrollView *)subview).bounces = NO;
-    
-    [[self webView] setOpaque: NO];
-    [[self webView] setBackgroundColor: [UIColor clearColor]];
-    [[self webView] loadHTMLString: @"<html><body style='background-color: transparent;color:white;font-weight:bold;font-family:helvetica;text-align:center;text-shadow: 0px -1px 1px rgba(0,0,0,0.7);'>Choose your elements</body></html>" baseURL:nil];    
+    [[self webView] setTitle: @"Choose your elements"];    
     [[self cancelButton] setEnabled:NO];
     [[[[[[self navigationController] viewControllers] objectAtIndex:0] navigationItem] rightBarButtonItem] setEnabled:NO];
     [self.window makeKeyAndVisible];

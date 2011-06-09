@@ -8,20 +8,26 @@
 
 #import "SingleElementViewController.h"
 
-
 @implementation SingleElementViewController
+
+@synthesize element, abbreviation, name, number, weight, charge;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.name.text = element.name;
+        self.abbreviation.text = element.abbreviation;
+        self.charge.text = element.commonOxidation;
     }
     return self;
 }
 
 - (void)dealloc
 {
+    self.name = nil;
+    self.abbreviation = nil;
+    self.charge = nil;
     [super dealloc];
 }
 

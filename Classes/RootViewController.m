@@ -68,6 +68,10 @@
     if (cell == nil) {
         [[NSBundle mainBundle] loadNibNamed:@"ElementTableCell" owner:self options:nil];
         cell = tvCell;
+        UISwipeGestureRecognizer *gesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
+        gesture.direction = UISwipeGestureRecognizerDirectionRight;
+        [cell.contentView addGestureRecognizer:gesture];
+        [gesture release];
         self.tvCell = nil;
     }
 
@@ -164,6 +168,26 @@
 			[self.filteredListContent addObject:element];
         }
     }
+}
+
+-(void)didSwipe:(UIGestureRecognizer *)gestureRecognizer {
+    
+    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        CGPoint swipeLocation = [gestureRecognizer locationInView:self.tableView];
+        NSIndexPath *swipedIndexPath = [self.tableView indexPathForRowAtPoint:swipeLocation];
+        ElementCell* swipedCell = (ElementCell*)[self.tableView cellForRowAtIndexPath:swipedIndexPath];
+        [self showElementDetailsForElement: swipedCell.element];
+    }
+}
+
+- (void)showElementDetailsForElement: (PElement*) element
+{
+	SingleElementViewController * controller = [[SingleElementViewController alloc] initWithNibName:@"SingleElementView" bundle:nil];
+	
+	[controller setElement:element];
+    
+	[[self navigationController] pushViewController:controller animated:YES];
+	[controller release]; controller = nil;
 }
 
 #pragma mark -

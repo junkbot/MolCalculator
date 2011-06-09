@@ -2,6 +2,7 @@
 #import "PElement.h"
 #import "PeriodAppDelegate.h"
 #import "ElementCell.h"
+#import "SingleElementViewController.h"
 
 @interface RootViewController : UITableViewController {
 	NSArray *indexedObjects;
@@ -15,4 +16,5 @@
 @property (nonatomic, assign) IBOutlet ElementCell *tvCell;
 
 - (void)filterContentForSearchText:(NSString*)searchText;
+- (void)showElementDetailsForElement: (PElement*) element;
 @end

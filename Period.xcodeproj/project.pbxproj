@@ -15,7 +15,6 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
-		AA0F3E3813A159B900EF96DC /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0F3E3713A159B900EF96DC /* GestureRecognizerViewController.m */; };
 		AA35EF96139181B200D213B4 /* NSString+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = AA35EF95139181B200D213B4 /* NSString+Subscript.m */; };
 		AA3FFAE2139FA63100550670 /* SingleElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3FFAE1139FA63100550670 /* SingleElementViewController.m */; };
 		AA4F91EC13913C0D00FA90A8 /* Periodic-Table kopi.csv in Resources */ = {isa = PBXBuildFile; fileRef = AA4F91EA13913C0D00FA90A8 /* Periodic-Table kopi.csv */; };
@@ -49,8 +48,6 @@
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Period-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Period-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		AA0F3E3613A159B900EF96DC /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
-		AA0F3E3713A159B900EF96DC /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
 		AA35EF94139181B200D213B4 /* NSString+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Subscript.h"; sourceTree = "<group>"; };
 		AA35EF95139181B200D213B4 /* NSString+Subscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Subscript.m"; sourceTree = "<group>"; };
 		AA3FFAE0139FA63100550670 /* SingleElementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleElementViewController.h; sourceTree = "<group>"; };
@@ -177,8 +174,6 @@
 		AA9B598F12EC760400FE1B29 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AA0F3E3613A159B900EF96DC /* GestureRecognizerViewController.h */,
-				AA0F3E3713A159B900EF96DC /* GestureRecognizerViewController.m */,
 				AA9B59C112EC77BF00FE1B29 /* CalculationViewController.h */,
 				AA9B59C212EC77BF00FE1B29 /* CalculationViewController.m */,
 				AAD3BA8412E4BD4700CF4141 /* ElementCell.h */,
@@ -300,7 +295,6 @@
 				AAF8EF9E13313D860067C705 /* PElementSearch.m in Sources */,
 				AA35EF96139181B200D213B4 /* NSString+Subscript.m in Sources */,
 				AA3FFAE2139FA63100550670 /* SingleElementViewController.m in Sources */,
-				AA0F3E3813A159B900EF96DC /* GestureRecognizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,9 +16,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.name.text = element.name;
-        self.abbreviation.text = element.abbreviation;
-        self.charge.text = element.commonOxidation;
+
     }
     return self;
 }
@@ -48,13 +46,16 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.name.text = element.name;
+    self.abbreviation.text = element.abbreviation;
+    self.charge.text = element.commonOxidation;
 }
-*/
+
 
 - (void)viewDidUnload
 {

@@ -19,7 +19,7 @@
 	PeriodAppDelegate* delegate = [(PeriodAppDelegate*)[[UIApplication sharedApplication] delegate] retain];
 	PElements *elements = [[delegate elements] retain];
 	self.indexedObjects = [[elements elements] indexUsingCollation:collation withSelector:@selector(abbreviation)];
-    self.filteredListContent = [[NSMutableArray alloc] init];
+    self.filteredListContent = [[[NSMutableArray alloc] init] autorelease];
     
 	[delegate release];
 	[elements release];

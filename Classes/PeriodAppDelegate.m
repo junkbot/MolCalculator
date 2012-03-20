@@ -41,7 +41,7 @@
 - (IBAction)resetCalculation
 {
     [self setMyEquation: nil];
-    [self setMyEquation:[[PEquation alloc] init]];
+    [self setMyEquation:[[[PEquation alloc] init] autorelease]];
     [[self webView] setTitle: @"Choose your elements"];    
 
     [[self cancelButton] setEnabled:NO];
@@ -51,8 +51,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-	self.elements = [[PElements alloc] init];
-    [self setMyEquation:[[PEquation alloc] init]];
+	self.elements = [[[PElements alloc] init] autorelease];
+    [self setMyEquation:[[[PEquation alloc] init] autorelease]];
     
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];

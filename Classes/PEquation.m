@@ -8,7 +8,7 @@
 - (id) init 
 {
 	self = [super init];
-	self.equationList = [[NSMutableArray alloc] init];
+	self.equationList = [[[NSMutableArray alloc] init] autorelease];
 	return self;
 }
 

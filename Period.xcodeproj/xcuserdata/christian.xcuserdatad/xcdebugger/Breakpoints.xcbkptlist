@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/PeriodAppDelegate.m"
-         timestampString = "327579157.221048"
+         timestampString = "328304857.116377"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "26"
-         endingLineNumber = "26"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
          landmarkName = "-updateMoleculeLabel"
          landmarkType = "5">
       </FileBreakpoint>
